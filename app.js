@@ -8,6 +8,7 @@ var app = express();
 const webflow = new Webflow({ token: 'INSERT API TOKEN' });
 
 app.get('/', function(req, res){
+    // pick a number that is > 100 * total collection size for x - could be automated
     for(var x = 0; x<18; x++){
         console.log(x);
         // creates promise - default limit is 100 and cannot be greater
